@@ -6,7 +6,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
-  Search, Compass, Eye, ShieldCheck, HelpCircle, 
+  Search, Eye, ShieldCheck, HelpCircle, 
   Sparkles, SlidersHorizontal, ArrowDown, Award, Trees, Heart, Landmark 
 } from 'lucide-react';
 
@@ -450,7 +450,21 @@ export default function App() {
           
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Compass className="w-6 h-6 text-emerald-400" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" className="w-6 h-6">
+                <circle cx="32" cy="32" r="32" fill="#0a1a0f"/>
+                <rect x="10" y="22" width="44" height="22" rx="4" fill="#10b981"/>
+                <rect x="44" y="25" width="7" height="10" rx="2" fill="#064e3b" opacity="0.8"/>
+                <rect x="13" y="25" width="8" height="8" rx="1.5" fill="#064e3b" opacity="0.8"/>
+                <rect x="24" y="25" width="8" height="8" rx="1.5" fill="#064e3b" opacity="0.8"/>
+                <rect x="35" y="25" width="7" height="8" rx="1.5" fill="#064e3b" opacity="0.8"/>
+                <rect x="14" y="33" width="6" height="11" rx="1" fill="#064e3b" opacity="0.6"/>
+                <circle cx="20" cy="44" r="6" fill="#064e3b"/>
+                <circle cx="20" cy="44" r="3" fill="#10b981"/>
+                <circle cx="44" cy="44" r="6" fill="#064e3b"/>
+                <circle cx="44" cy="44" r="3" fill="#10b981"/>
+                <rect x="52" y="29" width="3" height="4" rx="1" fill="#a7f3d0"/>
+                <rect x="12" y="19" width="38" height="4" rx="2" fill="#059669"/>
+              </svg>
               <span className="font-display font-bold text-lg text-white uppercase tracking-wider">
                 TOURS & TRAVELS
               </span>

@@ -4,7 +4,7 @@
  */
 
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Calendar, Users, MapPin, CheckCircle, ShieldAlert, Award, Star, Compass } from 'lucide-react';
+import { X, Calendar, Users, MapPin, CheckCircle, ShieldAlert, Award, Star } from 'lucide-react';
 import { Tour } from '../types';
 
 interface TourDetailModalProps {
@@ -44,7 +44,21 @@ export default function TourDetailModal({ tour, onClose, onBookNow }: TourDetail
           {/* Header */}
           <div className="p-5 border-b border-emerald-500/10 flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Compass className="w-5 h-5 text-emerald-400 animate-spin" style={{ animationDuration: '12s' }} />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" className="w-5 h-5 animate-spin" style={{ animationDuration: '12s' }}>
+                <circle cx="32" cy="32" r="32" fill="#0a1a0f"/>
+                <rect x="10" y="22" width="44" height="22" rx="4" fill="#10b981"/>
+                <rect x="44" y="25" width="7" height="10" rx="2" fill="#064e3b" opacity="0.8"/>
+                <rect x="13" y="25" width="8" height="8" rx="1.5" fill="#064e3b" opacity="0.8"/>
+                <rect x="24" y="25" width="8" height="8" rx="1.5" fill="#064e3b" opacity="0.8"/>
+                <rect x="35" y="25" width="7" height="8" rx="1.5" fill="#064e3b" opacity="0.8"/>
+                <rect x="14" y="33" width="6" height="11" rx="1" fill="#064e3b" opacity="0.6"/>
+                <circle cx="20" cy="44" r="6" fill="#064e3b"/>
+                <circle cx="20" cy="44" r="3" fill="#10b981"/>
+                <circle cx="44" cy="44" r="6" fill="#064e3b"/>
+                <circle cx="44" cy="44" r="3" fill="#10b981"/>
+                <rect x="52" y="29" width="3" height="4" rx="1" fill="#a7f3d0"/>
+                <rect x="12" y="19" width="38" height="4" rx="2" fill="#059669"/>
+              </svg>
               <span className="font-mono text-xs font-bold tracking-widest text-emerald-400 uppercase">
                 Itinerary Overview
               </span>
