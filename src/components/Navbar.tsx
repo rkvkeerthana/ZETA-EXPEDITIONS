@@ -5,7 +5,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Compass, Menu, X, Sun, Moon, Palette, Eye } from 'lucide-react';
+import { Menu, X, Sun, Moon, Palette, Eye } from 'lucide-react';
 import { BgTheme } from '../types';
 
 interface NavbarProps {
@@ -70,8 +70,22 @@ export default function Navbar({ currentTheme, setTheme, isDark, setIsDark, onNa
           tabIndex={0}
           aria-label="Tours and Travels home page"
         >
-          <div className="relative p-2 bg-emerald-950/40 border border-emerald-500/30 rounded-xl group-hover:border-emerald-400 group-hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all duration-300">
-            <Compass className="w-6 h-6 text-emerald-400 group-hover:rotate-45 transition-transform duration-500" />
+          <div className="relative p-1.5 bg-emerald-950/40 border border-emerald-500/30 rounded-xl group-hover:border-emerald-400 group-hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" className="w-7 h-7">
+              <circle cx="32" cy="32" r="32" fill="#0a1a0f"/>
+              <rect x="10" y="22" width="44" height="22" rx="4" fill="#10b981"/>
+              <rect x="44" y="25" width="7" height="10" rx="2" fill="#064e3b" opacity="0.8"/>
+              <rect x="13" y="25" width="8" height="8" rx="1.5" fill="#064e3b" opacity="0.8"/>
+              <rect x="24" y="25" width="8" height="8" rx="1.5" fill="#064e3b" opacity="0.8"/>
+              <rect x="35" y="25" width="7" height="8" rx="1.5" fill="#064e3b" opacity="0.8"/>
+              <rect x="14" y="33" width="6" height="11" rx="1" fill="#064e3b" opacity="0.6"/>
+              <circle cx="20" cy="44" r="6" fill="#064e3b"/>
+              <circle cx="20" cy="44" r="3" fill="#10b981"/>
+              <circle cx="44" cy="44" r="6" fill="#064e3b"/>
+              <circle cx="44" cy="44" r="3" fill="#10b981"/>
+              <rect x="52" y="29" width="3" height="4" rx="1" fill="#a7f3d0"/>
+              <rect x="12" y="19" width="38" height="4" rx="2" fill="#059669"/>
+            </svg>
           </div>
           <div>
             <span className="font-display font-bold text-lg text-white uppercase tracking-wider group-hover:text-emerald-300 transition-colors">
