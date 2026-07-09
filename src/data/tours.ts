@@ -1,0 +1,137 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { Tour } from '../types';
+
+export const TOURS_DATA: Tour[] = [
+  {
+    id: 'bali-escape',
+    title: 'Bali Tropical Paradise Escape',
+    destination: 'Bali, Indonesia',
+    description: 'Immerse yourself in volcanic mountain views, pristine sandy beaches, rich local temples, and lush emerald green rice terrace landscapes.',
+    price: 1250,
+    duration: 7,
+    image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
+    category: 'Beach',
+    rating: 4.9,
+    featured: true,
+    reviews: 142,
+    difficulty: 'Easy',
+    groupSize: 12,
+    highlights: ['Uluwatu Sunset Temple Visit', 'Tegalalang Rice Terrace Trekking', 'Scuba Diving in Nusa Penida', 'Traditional Balinese Spa Day']
+  },
+  {
+    id: 'swiss-alps',
+    title: 'Swiss Alps Crest Expedition',
+    destination: 'Zermatt, Switzerland',
+    description: 'Breathe pristine mountain air, witness the legendary towering Matterhorn, and experience unparalleled alpine skiing, hiking, and premium luxury cabins.',
+    price: 2450,
+    duration: 5,
+    image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80',
+    category: 'Mountain',
+    rating: 4.8,
+    featured: true,
+    reviews: 98,
+    difficulty: 'Moderate',
+    groupSize: 8,
+    highlights: ['Matterhorn Glacial Paradise Cableway', 'Zermatt Alpine Village Stroll', 'Sunset Fondue in Mountain Cabins', 'Guided Snowshoeing Tours']
+  },
+  {
+    id: 'tokyo-cyber',
+    title: 'Tokyo Neon Cyber Odyssey',
+    destination: 'Tokyo, Japan',
+    description: 'Traverse the neon-lit futuristic alleys of Akihabara, visit millennium-old historic shrines in Asakusa, and savor world-class gourmet sushi.',
+    price: 1850,
+    duration: 6,
+    image: 'https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?auto=format&fit=crop&w=800&q=80',
+    category: 'City',
+    rating: 4.95,
+    featured: true,
+    reviews: 215,
+    difficulty: 'Easy',
+    groupSize: 15,
+    highlights: ['Shibuya Crossing Panoramic Lounge', 'Asakusa Senso-ji Temple Walk', 'Robot Cafe & Digital Art Museum', 'Michelin Star Ramen Tasting']
+  },
+  {
+    id: 'machu-picchu',
+    title: 'Inca Trail Mountain Odyssey',
+    destination: 'Cusco, Peru',
+    description: 'Embark on a rigorous and legendary hiking pilgrimage through high Andean cloud forests to uncover the majestic, ancient ruins of Machu Picchu.',
+    price: 1590,
+    duration: 6,
+    image: 'https://images.unsplash.com/photo-1587542513982-53696fb9cb50?auto=format&fit=crop&w=800&q=80',
+    category: 'Adventure',
+    rating: 4.85,
+    featured: false,
+    reviews: 84,
+    difficulty: 'Challenging',
+    groupSize: 10,
+    highlights: ['Guided Incan Pathway Pilgrimage', 'Stargazing at Cloud Forest Camp', 'Dawn Entrance to Machu Picchu', 'Sacred Valley Ruins Exploration']
+  },
+  {
+    id: 'serengeti-safari',
+    title: 'Serengeti Wild Safari Expedition',
+    destination: 'Serengeti Park, Tanzania',
+    description: 'Experience the sweeping savannah grasslands, follow the miraculous Great Wildebeest Migration, and observe majestic lions, cheetahs, and elephants.',
+    price: 3100,
+    duration: 8,
+    image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80',
+    category: 'Adventure',
+    rating: 4.92,
+    featured: true,
+    reviews: 76,
+    difficulty: 'Easy',
+    groupSize: 6,
+    highlights: ['Great Migration Game Drives', 'Sunrise Hot Air Balloon Safari', 'Traditional Maasai Cultural Village Visit', 'Luxury Eco-Lodge Stays']
+  },
+  {
+    id: 'santorini-sunset',
+    title: 'Santorini Azure Ocean Oasis',
+    destination: 'Oia, Greece',
+    description: 'Admire iconic whitewashed cliffside villages overlooking brilliant sapphire waters, witness world-famous sunsets, and enjoy authentic Mediterranean dining.',
+    price: 2150,
+    duration: 6,
+    image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80',
+    category: 'Beach',
+    rating: 4.78,
+    featured: false,
+    reviews: 112,
+    difficulty: 'Easy',
+    groupSize: 8,
+    highlights: ['Catamaran Sunset Cruise with Dining', 'Amoudi Bay Cliff Jumping', 'Traditional Volcanic Wine Tasting', 'Private Cliffside Infinity Pools']
+  },
+  {
+    id: 'paris-lights',
+    title: 'Paris Art & Culture Soiree',
+    destination: 'Paris, France',
+    description: 'Delight in classical French architecture, wander through Louvre treasures, cruise along the tranquil Seine River, and savor fresh buttery croissants.',
+    price: 1650,
+    duration: 5,
+    image: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80',
+    category: 'Cultural',
+    rating: 4.82,
+    featured: false,
+    reviews: 160,
+    difficulty: 'Easy',
+    groupSize: 14,
+    highlights: ['Private Louvre Museum Tour', 'Eiffel Tower Gourmet Summit', 'Seine River Jazz Music Dinner Cruise', 'Montmartre Artists Neighborhood Walk']
+  },
+  {
+    id: 'cairo-pyramids',
+    title: 'Pyramids of Giza Historic Trek',
+    destination: 'Cairo, Egypt',
+    description: 'Step back five millennia to stand at the base of the Great Pyramid, cruise the legendary Nile, and explore thousands of golden treasures.',
+    price: 1390,
+    duration: 5,
+    image: 'https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=800&q=80',
+    category: 'Cultural',
+    rating: 4.75,
+    featured: false,
+    reviews: 95,
+    difficulty: 'Moderate',
+    groupSize: 12,
+    highlights: ['Private Egyptologist Pyramids Tour', 'Grand Egyptian Museum Tour', 'Traditional Felucca Nile Sailing', 'Khan el-Khalili Bazaar Market Walk']
+  }
+];
