@@ -1,20 +1,51 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# ZarStore – E-Commerce Application
 
-# Run and deploy your AI Studio app
+ZarStore is a modern e-commerce application built with Laravel 11, React, TypeScript, Vite, and MySQL. It provides a complete online shopping experience, including product browsing, cart management, coupon support, and order processing.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/68c11fa1-cdcf-4d2a-8f20-8f9a18d9efda
+- Product catalog with categories
+- Product search, filtering, and sorting
+- Shopping cart management
+- Coupon support
+- Secure checkout process
+- Order management
+- Responsive user interface
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- Laravel 11
+- React
+- TypeScript
+- Vite
+- MySQL
+- Blade
 
+## Installation
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Backend
+
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## License
+
+This project is for educational and portfolio purposes.
